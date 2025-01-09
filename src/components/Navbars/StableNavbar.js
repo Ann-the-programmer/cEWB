@@ -19,19 +19,19 @@ import {
 
 const logo = require('assets/img/cEWB_Logo.png');
 
-function IndexNavbar() {
+function StableNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   React.useEffect(() => {
     const updateNavbarColor = () => {
       if (
-        document.documentElement.scrollTop > 399 ||
-        document.body.scrollTop > 399
+        document.documentElement.scrollTop > 0 ||
+        document.body.scrollTop > 0
       ) {
         setNavbarColor("");
       } else if (
-        document.documentElement.scrollTop < 400 ||
-        document.body.scrollTop < 400
+        document.documentElement.scrollTop < 0 ||
+        document.body.scrollTop < 0
       ) {
         setNavbarColor("navbar-transparent");
       }
@@ -87,13 +87,6 @@ function IndexNavbar() {
             navbar
           >
             <Nav navbar>
-            <NavItem>
-                <NavLink
-                  href="/index"
-                >
-                  <p>Home Page</p>
-                </NavLink>
-              </NavItem>
               <NavItem>
                 <NavLink
                   href="/impact"
@@ -144,33 +137,42 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://www.instagram.com/carletonewb/"
+                  href="https://twitter.com/CreativeTim?ref=creativetim"
                   target="_blank"
-                  id="instagram-tooltip"
+                  id="twitter-tooltip"
                 >
-                  <i className="fab fa-instagram"></i>
-                  <p className="d-lg-none d-xl-none">Instagram</p>
+                  <i className="fab fa-twitter"></i>
+                  <p className="d-lg-none d-xl-none">Twitter</p>
                 </NavLink>
+                <UncontrolledTooltip target="#twitter-tooltip">
+                  Follow us on Twitter
+                </UncontrolledTooltip>
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://www.facebook.com/EWBCarleton/"
+                  href="https://www.facebook.com/CreativeTim?ref=creativetim"
                   target="_blank"
                   id="facebook-tooltip"
                 >
                   <i className="fab fa-facebook-square"></i>
                   <p className="d-lg-none d-xl-none">Facebook</p>
                 </NavLink>
+                <UncontrolledTooltip target="#facebook-tooltip">
+                  Like us on Facebook
+                </UncontrolledTooltip>
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://discord.gg/BS2fPG252R"
+                  href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
                   target="_blank"
-                  id="discord-tooltip"
+                  id="instagram-tooltip"
                 >
-                  <i className="fab fa-discord"></i>
-                  <p className="d-lg-none d-xl-none">Discord</p>
+                  <i className="fab fa-instagram"></i>
+                  <p className="d-lg-none d-xl-none">Instagram</p>
                 </NavLink>
+                <UncontrolledTooltip target="#instagram-tooltip">
+                  Follow us on Instagram
+                </UncontrolledTooltip>
               </NavItem>
             </Nav>
           </Collapse>
@@ -180,4 +182,4 @@ function IndexNavbar() {
   );
 }
 
-export default IndexNavbar;
+export default StableNavbar;

@@ -6,7 +6,7 @@ import { Button, Container, Row,
 
 // core components
 
-function LandingPageHeader() {
+function TeamInfoHeader() {
   let pageHeader = React.createRef();
 
   React.useEffect(() => {
@@ -34,15 +34,7 @@ function LandingPageHeader() {
         ></div>
         <div className="content-center">
           <Container>
-            <h1 className="title">Impact in Action</h1>
-            <Row>
-              <Col className="ml-auto mr-auto text-center" md="8">
-                <h5 className="description">
-                EWB chapters all over the world are working to build a better 
-                and brighter future. Find out more about recent projects below!
-                </h5>
-              </Col>
-            </Row>
+            <h1 className="title">MEET THE 2024/2025 EXECS</h1>
           </Container>
         </div>
       </div>
@@ -50,4 +42,4 @@ function LandingPageHeader() {
   );
 }
 
-export default LandingPageHeader;
+export default TeamInfoHeader;

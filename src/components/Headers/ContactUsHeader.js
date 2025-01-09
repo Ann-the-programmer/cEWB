@@ -6,7 +6,7 @@ import { Button, Container, Row,
 
 // core components
 
-function LandingPageHeader() {
+function ContactUsHeader() {
   let pageHeader = React.createRef();
 
   React.useEffect(() => {
@@ -32,22 +32,9 @@ function LandingPageHeader() {
           }}
           ref={pageHeader}
         ></div>
-        <div className="content-center">
-          <Container>
-            <h1 className="title">Impact in Action</h1>
-            <Row>
-              <Col className="ml-auto mr-auto text-center" md="8">
-                <h5 className="description">
-                EWB chapters all over the world are working to build a better 
-                and brighter future. Find out more about recent projects below!
-                </h5>
-              </Col>
-            </Row>
-          </Container>
-        </div>
       </div>
     </>
   );
 }
 
-export default LandingPageHeader;
+export default ContactUsHeader;

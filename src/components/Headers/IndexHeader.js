@@ -28,7 +28,7 @@ function IndexHeader() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/header.jpg") + ")"
+            backgroundImage: "url(" + require("assets/img/ewb_background.png") + ")"
           }}
           ref={pageHeader}
         ></div>
@@ -37,30 +37,19 @@ function IndexHeader() {
             <img
               alt="..."
               className="n-logo"
-              src={require("assets/img/now-logo.png")}
+              src={require("assets/img/cEWB_Logo.png")}
             ></img>
-            <h1 className="h1-seo">Now UI Kit.</h1>
-            <h3>A beautiful Bootstrap 4 UI kit. Yours free.</h3>
+            <h1 className="h1-seo">EWB Carleton</h1>
+            <h3>Engineers without Borders</h3>
           </div>
           <h6 className="category category-absolute">
-            Designed by{" "}
-            <a href="http://invisionapp.com/?ref=creativetim" target="_blank">
-              <img
-                alt="..."
-                className="invision-logo"
-                src={require("assets/img/invision-white-slim.png")}
-              ></img>
-            </a>
-            . Coded by{" "}
+            <b>Designed and coded by </b>
             <a
-              href="https://www.creative-tim.com?ref=nukr-index-header"
+              href="https://rush1404.github.io/PortfolioWebsite/"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              <img
-                alt="..."
-                className="creative-tim-logo"
-                src={require("assets/img/creative-tim-white-slim2.png")}
-              ></img>
+              <b>Rush</b>
             </a>
             .
           </h6>
